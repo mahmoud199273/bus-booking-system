@@ -1,0 +1,53 @@
+section#about
+	padding: 75px 0
+	background-color: #F8F4EC
+
+	.about_container
+		margin: 0 auto
+		padding: 150px 25px 100px 25px
+		display: flex
+		flex-direction: row
+		flex-wrap: wrap
+		justify-content: space-between
+
+		.about_text
+			max-width: 550px
+
+			h4
+				font-family: 'ClassicalGaramondBT-Roman', sans-serif
+				font-size: 28px
+				color: #303500
+				margin-bottom: 5px
+
+			h5
+				font-family: 'ClassicalGaramondBT-Italic', sans-serif
+				font-size: 23px
+				margin: 5px 0 30px 0
+				color: #916901
+
+			p
+				font-family: 'AppleSymbols-Regular', sans-serif
+				font-size: 16px
+				color: #303500
+				margin-bottom: 25px
+
+		.about_img
+			img
+				width: 100%
+				max-width: 425px
+				margin-left: 100px
+
+@media screen and (max-width: 834px)
+	body
+		#wrapper
+			section#about
+				.about_container
+					padding: 0 25px
+
+					.about_text
+						max-width: initial
+						margin-bottom: 25px
+
+					.about_img
+						img
+							margin-left: 0

@@ -1,0 +1,68 @@
+section#welcome
+	position: relative
+	display: flex
+	justify-content: flex-end
+	align-items: center
+
+	.welcome_back
+		img
+			width: 100%
+
+	.welcome_text
+		position: absolute
+		top: 0
+		right: 0
+		width: 45%
+		height: 100%
+		display: flex
+		align-items: center
+		color: #fff
+		background: url("../imgs/welcome_text_back.png") top center / cover no-repeat
+		opacity: 0.8
+
+		.text
+			padding: 0 25px
+
+			h2
+				font-family: 'ClassicalGaramondBT-Bold', sans-serif
+				font-size: 40px
+				margin-bottom: 15px
+
+				span
+					color: #A6A641
+					font-family: 'ClassicalGaramondBT-Italic', sans-serif
+
+			p
+				font-family: 'AppleSymbols-Regular', sans-serif
+				max-width: 345px
+				font-size: 16px
+				text-align: justify
+
+@media screen and (max-width: 768px)
+	body
+		#wrapper
+			section#welcome
+				.welcome_text
+					.text
+						h2
+							font-size: 30px
+
+@media screen and (max-width: 767px)
+	body
+		#wrapper
+			section#welcome
+				display: block
+
+				.welcome_back
+					img
+						width: 100%
+
+				.welcome_text
+					position: relative
+					width: 100%
+					padding: 25px 0
+					display: flex
+					align-items: center
+					color: #fff
+					background: url("../imgs/welcome_text_back.png") top center / cover no-repeat
+					opacity: 0.8

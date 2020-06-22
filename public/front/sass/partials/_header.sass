@@ -1,0 +1,122 @@
+header
+	position: absolute
+	top: 0
+	left: 0
+	width: 100%
+	display: flex
+	flex-direction: row nowrap
+	justify-content: flex-start
+	padding: 25px 100px
+	z-index: 100
+
+	.logo
+		margin-right: 25px
+
+		a
+			img
+				width: 80px
+
+	.teameques_navigation
+		display: flex
+		flex-flow: column nowrap
+		justify-content: flex-end
+
+		.teameques
+			margin-bottom: 25px
+
+			img
+				width: 200px
+
+		nav.main_nav
+			display: block
+
+			ul
+				li
+					display: inline-block
+					margin-right: 16px
+
+					a
+						font-family: 'ClassicalGaramondBT-Bold', sans-serif
+						font-weight: bold
+						font-size: 17px
+						color: #A6A641
+
+		.burger_icon
+			display: none
+			font-weight: bold
+			cursor: pointer
+
+		nav.collapsed_nav
+			position: fixed
+			top: 0
+			left: 0
+			width: max-content
+			height: 100%
+			z-index: 100
+			background-color: #fff
+			box-shadow: 0 1px 5px 0 #bbb
+			display: none
+
+			.close_nav
+				position: absolute
+				top: 0
+				right: 0
+				width: 25px
+				height: 25px
+				line-height: 25px
+				text-align: center
+				color: #fff
+				background-color: #f00
+				cursor: pointer
+
+			ul
+				margin: 25px 0
+				border-bottom: 1px solid #000
+
+				&:last-child
+					border-bottom: none
+
+				li
+					display: block
+					margin-right: 0
+
+					a
+						font-family: 'ClassicalGaramondBT-Bold', sans-serif
+						font-size: 15px
+						font-weight: bold
+						color: #A6A641 !important
+						display: block
+						margin-bottom: 5px
+						padding: 10px 20px
+						cursor: pointer
+
+@media screen and (max-width: 1024px)
+	body
+		header
+			padding: 25px 50px
+
+			.teameques_navigation
+				nav.main_nav
+					display: none
+
+				.burger_icon
+					display: block
+
+@media screen and (max-width: 767px)
+	body
+		header
+			padding: 25px
+
+			.logo
+				margin-right: 15px
+
+				a
+					img
+						width: 40px
+
+			.teameques_navigation
+				.teameques
+					margin-bottom: 5px
+
+					img
+						width: 100px

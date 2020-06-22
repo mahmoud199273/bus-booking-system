@@ -1,0 +1,63 @@
+section#services
+	padding: 90px 0
+	background-color: #303500
+
+	.services_container
+		padding: 125px 25px 175px 25px
+		background: url("../imgs/services_back.png") center center / cover no-repeat
+
+		ul
+			margin: 0 auto
+			text-align: center
+
+			li.service
+				display: inline-block
+				text-align: center
+				padding: 8px
+				@include transition(all .3s ease-in-out)
+
+				.service_img
+					max-width: 240px
+
+					img
+						width: 100%
+
+				.service_name
+					margin: 10px 0
+					color: #F8F4EC
+
+					h4
+						font-family: 'ClassicalGaramondBT-Bold', sans-serif
+						font-size: 18px
+
+				&:nth-child(even)
+					@include transform(translateY(40px))
+				
+				&:hover, &:focus, &:visited
+					.service_name
+						text-decoration: underline
+
+@media screen and (max-width: 834px)
+	body
+		#wrapper
+			section#services
+				.services_container
+					ul
+						li.service
+							&:nth-child(even)
+								@include transform(translateY(0px))
+
+@media screen and (max-width: 767px)
+	body
+		#wrapper
+			section#services
+				padding: 40px 0
+
+				.services_container
+					padding: 50px 25px
+
+					ul
+						li.service
+							.service_img
+								img
+									max-width: 225px

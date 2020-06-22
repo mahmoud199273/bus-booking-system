@@ -1,0 +1,184 @@
+section#contact
+	background: url("../imgs/contact_back.jpg") center center / cover no-repeat
+
+	.contact_container
+		max-width: 1300px
+		margin: 0 auto
+		padding: 175px 25px 125px 25px
+		
+		.contact_title
+			font-family: 'ClassicalGaramondBT-Bold', sans-serif
+			font-size: 40px
+			margin: 0 0 55px 60px
+			color: #F8F4EC
+
+		.contact_wrapper
+			font-family: 'AppleSymbols-Regular', sans-serif
+			display: flex
+			flex-direction: row
+			flex-wrap: wrap
+			justify-content: space-between
+			padding: 25px 50px
+			@include boxShadow(0 1px 5px 0 #a6a6a6)
+			background: url("../imgs/form_back.png") center center / cover no-repeat
+
+			.contact_form
+				flex-grow: 1
+				margin-right: 80px
+				padding: 80px 0 10px 0
+
+				.form_title
+					margin-bottom: 30px
+					color: #452800
+
+				form
+					.form_group
+						margin-bottom: 40px
+						padding-right: 20px
+
+						label
+							display: block
+							margin-bottom: 0
+							font-size: 17px
+							font-weight: normal
+							color: #452800
+
+						input, textarea
+							width: 100%
+							padding: 5px 5px 5px 0
+							border: none
+							border-bottom: 2px solid #67461E !important
+							color: #452800
+							background-color: transparent
+
+						textarea
+							resize: vertical
+
+					.submit_form_group
+						margin-top: 25px
+						text-align: center
+
+						input[type="submit"]
+							width: 170px
+							padding: 10px
+							text-align: center
+							border-radius: 35px
+							font-size: 25px
+							color: #F9F6EE
+							background-color: #442700
+							@include transition(all .3s ease-in-out)
+
+							&:hover, &:focus, &:visited
+								background-color: lighten(#442700, 10%)
+
+			.contact_info
+				width: 400px
+				padding: 35px
+				color: #F9F6EE
+				background: url("../imgs/contact_info_back.png") center center / cover no-repeat
+
+				.info_title
+					margin-top: 35px
+					font-size: 27px
+
+				.info
+					height: calc(100% - 50px)
+					display: flex
+					flex-flow: column nowrap
+					justify-content: space-around
+
+					p
+						font-size: 15px
+
+						a
+							color: #F9F6EE
+
+					.socials
+						text-align: center
+
+						li
+							display: inline-block
+							margin: 0 2px
+
+							a
+								display: inline-block
+								width: 35px
+								height: 35px
+								line-height: 37px
+								text-align: center
+								border: 1px solid #F8F4EC
+								border-radius: 50%
+
+								i
+									font-size: 19px
+									color: #F8F4EC
+
+@media screen and (max-width: 834px)
+	body
+		#wrapper
+			section#contact
+				.contact_container
+					padding: 75px 25px 50 25px
+					
+					.contact_title
+						margin: 0 0 40px 0
+
+					.contact_wrapper
+						padding: 25px 25px 50px 25px
+
+						.contact_form
+							flex-grow: 1
+							margin: 0 25px 50px 0
+
+							.form_title
+								font-size: 20px
+
+							form
+								.form_group
+									padding-right: 0
+
+									label
+										font-size: 15px
+
+									input, textarea
+										padding: 0 5px 5px 0
+
+								.submit_form_group
+									input[type="submit"]
+										font-size: 20px
+
+						.contact_info
+							width: 100%
+							padding: 25px 25px 50px 25px
+
+							.info_title
+								margin-top: 15px
+								font-size: 19px
+
+							.info
+								height: calc(100% - 25px)
+
+								p
+									font-size: 15px
+
+									a
+										color: #F9F6EE
+
+								.socials
+									text-align: center
+
+									li
+										display: inline-block
+										margin: 0 2px
+
+										a
+											display: inline-block
+											width: 25px
+											height: 25px
+											line-height: 25px
+											text-align: center
+											border: 1px solid #F8F4EC
+											border-radius: 50%
+
+											i
+												color: #F8F4EC
